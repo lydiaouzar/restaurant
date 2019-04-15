@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>
+     Acueil
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="Acueil"> 
+    
+    <h2><img style="width: 60%;" src="1.png" /></h2>
+
+    <ion-card-content>
+        <ion-card-title>
+           
+
+
+
+        </ion-card-title>
+      </ion-card-content>
+       
+       
+          <ion-item>
+            <ion-label fixed>Categories</ion-label>
+            <ion-select (ionChange)="changeCategory()" [(ngModel)]="category" name="category">
+               
+                <ion-select-option value="f">Entrée</ion-select-option>
+                <ion-select-option value="m">Plat</ion-select-option>
+                <ion-select-option value="m">Dessert</ion-select-option>
+            </ion-select>
+          </ion-item>
+        
+    
+
+    
+   <ion-button expand="full"color = "danger">Bienvenue dans notre restaurant </ion-button> 
+  
+    
+    <ion-card>
+       
+        <ion-card-content>
+            <ion-card-title>
+               Evaluez nos plats
+            </ion-card-title>
+           <ion-list>
+               <ion-item>
+                   <ion-icon name="ios-restaurant" item-left></ion-icon>
+                   Services/plats
+                 
+               </ion-item>
+
+               <ion-item>
+                   <ion-icon name="thumbs-up" item-left></ion-icon>
+                   Note
+                  
+               </ion-item>
+
+               <ion-item>
+                   <ion-icon name="chatboxes" left></ion-icon>
+                   Commentaire
+                  
+               </ion-item>
+           </ion-list>
+           <ion-button  expand="block"color = "danger" href="tab3.page.html">Voir la page contact</ion-button>
+        </ion-card-content>
+      </ion-card>
+
+
+
+     
+
+</ion-content>

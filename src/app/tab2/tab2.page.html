@@ -1,0 +1,97 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>
+     Menu
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="getting-started"> 
+    
+ <ion-card> 
+  <ion-card-content  color="danger"> 
+     
+<img src="../www/images/2.jpg"/>
+<p>Prix : 50 €{{item.price}}</p>
+</ion-card-content> 
+</ion-card> 
+
+<ion-card> 
+    <ion-card-content  color="danger"> 
+        <img src="../www/images/3.jpg"/>
+<p>Prix : 35 €{{item.price}}</p>
+</ion-card-content> 
+</ion-card> 
+
+<ion-card> 
+    <ion-card-content  color="danger"> 
+        
+        <img src="../www/images/4.jpg"/>
+  <p>Prix : 50 €{{item.price}}</p>
+  </ion-card-content> 
+  </ion-card> 
+
+
+  <ion-card> 
+      <ion-card-content  color="danger"> 
+          
+          <img src="../www/images/5.jpg"/>
+    <p>Prix : 40 €{{item.price}}</p>
+    </ion-card-content> 
+    </ion-card> 
+
+
+    
+  <ion-card> 
+      <ion-card-content  color="danger"> 
+          
+          <img src="../www/images/6.jpg"/>
+    <p>Prix : 50 €{{item.price}}</p>
+    </ion-card-content> 
+    </ion-card> 
+
+    <ion-card> 
+      <ion-card-content  color="danger"> 
+          
+          <img src="../www/images/6.jpg"/>
+    <p>Prix : 25 €{{item.price}}</p>
+    </ion-card-content> 
+    </ion-card> 
+
+    <ion-card> 
+      <ion-card-content  color="danger"> 
+          
+          <img src="../www/images/6.jpg"/>
+    <p>Prix : 20 €{{item.price}}</p>
+    </ion-card-content> 
+    </ion-card> 
+
+
+
+<ion-thumbnail item-left>            
+ 
+  </ion-thumbnail>
+  
+  
+
+
+
+
+
+  
+
+
+
+<ion-list>
+  <ion-item *ngFor="let item of items">
+    <ion-thumbnail slot="start">
+      <ion-img [src]="item.src"></ion-img>
+    </ion-thumbnail>
+    <ion-label>{{item.text}}</ion-label>
+  </ion-item>
+</ion-list>
+
+</ion-content>
+
+
+
